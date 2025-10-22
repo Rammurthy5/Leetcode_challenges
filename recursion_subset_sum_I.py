@@ -1,3 +1,4 @@
+# time complexity O(2^n)
 def print_all_subset_sum(ind, arr, t_arr, summ):
   if ind ==len(arr): # stop when the index is out of bounds
     return [summ]
