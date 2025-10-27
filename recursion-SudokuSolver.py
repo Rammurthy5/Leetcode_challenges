@@ -1,5 +1,5 @@
 # time complexity is O(k^E)
-# space is O(1)
+# space is O(E)
 
 # sudoku is always 9x9 with 3 rules: 1 to 9 numbers present once in each row, each col, each sub-matrix 3x3
 
