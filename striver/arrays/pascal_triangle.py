@@ -12,4 +12,21 @@ def find_element_pascaltriangle(n, r):
 print(find_element_pascaltriangle(5, 3)) # using ncr formula n! / c! * (n-c)!
 
 def print_nth_row_pascaltriangle(n):
-  pass
+    ans = 1
+    print(ans)
+    for i in range(1, n):
+        ans = ans * (n-i)
+        ans = ans // i
+        print(ans)
+
+print_nth_row_pascaltriangle(6)  # O(n)
+
+def print_pascaltriangle(n): # O(n * n)
+    ans = []
+    for i in range(1, n):
+        ans.append([print_nth_row_pascaltriangle(i)])
+    print(ans)
+
+print_pascaltriangle(6)
+
+
